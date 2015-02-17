@@ -1,0 +1,5 @@
+anna = User.create(name: "Anna", password: "anna")
+missy = User.create(name: "Missy", password: "missy")
+article = Article.create(title:"Big News", content: "Lots of things to say!", photo: "http://bit.ly/1zjFidJ" user_id: anna.id)
+comment = Comment.create(content: "Woah!", user_id: missy.id, article_id: article.id)
+vote = Vote.create(user_id: missy.id, article_id: article.id)
